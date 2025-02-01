@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="university-logo.avif" height="100px" width="100px"><br><br>
+            <h1><strong> SHMN University</strong></h1>
+        </div><br><br>
+        <nav>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a> 
+        </nav>
+    </header>
+    <div class="container">
+        <div class="login-container">
+            <div class="tab">
+              <button
+                id="adminTab"
+                class="tablinks active"
+                onclick="openForm('admin')"
+              >
+                Admin
+              </button>
+              <button id="studentTab" class="tablinks" onclick="openForm('student')">
+                Student
+              </button>
+            </div>
+      
+            <div id="admin" class="tabcontent">
+              <form id="adminForm" action="AdminLogin" method="post">
+                <input type="text" placeholder="Admin ID" name="reg_no" required/>
+                <input type="password" placeholder="Password" name="password" required/>
+                <button class="button2" type="submit">Login</button>
+              </form>
+            </div>
+      
+            <div id="student" class="tabcontent" style="display: none">
+              <form id="studentForm" action="SRetrieveServlet" method="post">
+                <input type="text" placeholder="Reg No" name="roll_no" required/>
+                <input type="password" placeholder="Password" name="name" required/>
+                <button class="button2" type="submit">Login</button>
+              </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <div class="footer">
+                <div>
+                       <div class="footer-col-2">
+                       <img src="university-logo.avif" alt="my company name" style="max-width:80px;
+                       height:auto;
+                       border-radius:100%;" id="first"><h1><strong>SHMN University</strong></h1>
+                       </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script>
+        function openForm(formName) {
+  var i;
+  var tabcontent = document.getElementsByClassName("tabcontent");
+  var tablinks = document.getElementsByClassName("tablinks");
+
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(formName).style.display = "block";
+  document.getElementById(formName + "Tab").className += " active";
+}
+
+// Set default tab to Student
+document.getElementById("adminTab").click();
+
+    </script>
+</body>
+</html>

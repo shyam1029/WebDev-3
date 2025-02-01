@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img
+          src="university-logo.avif"
+          height="100px"
+          width="100px"
+        /><br /><br />
+        <h1><strong> SHMN University</strong></h1>
+      </div>
+      <br /><br />
+      <nav>
+        <a href="./Register.html">Register</a>
+        <a href="./StudentDetails.html">Student Details</a>
+        <a href="./AddSubjectGrades.html">Academic</a>
+        <a href="./stdfee.html">Fee Sturcture</a>
+        <a href="./update.html">Update Details</a>
+        <a href="DisplayForm">View Application</a>
+        <a href="./RetrieveSubjectDetails.html">Grades</a>
+        <a href="./UpdateSubjectGrade.html">update grade</a>
+        <a href="./index.html">Log out</a>
+      </nav>
+    </header>
+    <div class="container">
+      <form action="RetrieveServlet" method="get">
+        <label>Student Reg No:</label><br /><br />
+        <input type="text" placeholder="Reg No" name="roll_no" /><br /><br />
+        <button type="Search" class="button2">Get Details</button>
+      </form>
+    </div>
+  </body>
+</html>

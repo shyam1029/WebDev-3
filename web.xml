@@ -1,0 +1,148 @@
+
+<web-app>
+
+    <!-- Servlet Configuration -->
+    <servlet>
+        <servlet-name>InsertStudentServlet</servlet-name>
+        <servlet-class>mohan</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>InsertStudentServlet</servlet-name>
+        <url-pattern>/InsertStudent</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>retrive</servlet-name>
+        <servlet-class>retrive</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>retrive</servlet-name>
+        <url-pattern>/RetrieveServlet</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>sretrive</servlet-name>
+        <servlet-class>sretrive</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>sretrive</servlet-name>
+        <url-pattern>/SRetrieveServlet</url-pattern>
+    </servlet-mapping>
+ <servlet>
+        <servlet-name>change</servlet-name>
+        <servlet-class>chnage</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>change</servlet-name>
+        <url-pattern>/UpdatePassword</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>adminl</servlet-name>
+        <servlet-class>adminl</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>adminl</servlet-name>
+        <url-pattern>/AdminLogin</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>fee</servlet-name>
+        <servlet-class>feedetails</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>fee</servlet-name>
+        <url-pattern>/FeeDetails</url-pattern>
+    </servlet-mapping>
+       <servlet>
+        <servlet-name>feer</servlet-name>
+        <servlet-class>feeretrive</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>feer</servlet-name>
+        <url-pattern>/RetrieveFeeDetailsServlet</url-pattern>
+    </servlet-mapping>
+       <servlet>
+        <servlet-name>update</servlet-name>
+        <servlet-class>update</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>update</servlet-name>
+        <url-pattern>/UpdateStudent</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>formreq</servlet-name>
+        <servlet-class>fromreq</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>formreq</servlet-name>
+        <url-pattern>/UpdateStudent</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>sretrive</servlet-name>
+        <servlet-class>sformretrival</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>sretrive</servlet-name>
+        <url-pattern>/RetrieveForm</url-pattern>
+    </servlet-mapping>
+  <servlet>
+        <servlet-name>form</servlet-name>
+        <servlet-class>formdisplay</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>form</servlet-name>
+        <url-pattern>/DisaplyForm</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>updateform</servlet-name>
+        <servlet-class>updateform</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>updateform</servlet-name>
+        <url-pattern>/UpdateStatus</url-pattern>
+    </servlet-mapping>
+      <servlet>
+        <servlet-name>muapp</servlet-name>
+        <servlet-class>myappication</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>muapp</servlet-name>
+        <url-pattern>/myapplication</url-pattern>
+    </servlet-mapping>
+<servlet>
+ <servlet-name>Grade</servlet-name>
+        <servlet-class>Graderetrive</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>Grade</servlet-name>
+        <url-pattern>/RetrieveSubjec</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Subject Grades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><div class="logo-container">
+        <img src="university-logo.avif" height="100px" width="100px"><br><br>
+        <h1><strong> SHMN University</strong></h1>
+    </div><br><br>
+    <nav>
+            <a href="./Register.html">Register</a>
+            <a href="./StudentDetails.html">Student Details</a> 
+            <a href="./AddSubjectGrades.html">Academic</a> 
+            <a href="./stdfee.html">Fee Sturcture</a>
+            <a href="./update.html">Update Details</a>  
+            <a href="DisplayForm">View Application</a> 
+            <a href="./RetrieveSubjectDetails.html">Grades</a>
+            <a href="./UpdateSubjectGrade.html">update grade</a>
+            <a href="./index.html">Log out</a>  
+        </nav>
+        </header>
+<div class="container">
+    <!----Registration Form-->
+<div class="form-container">
+    <h1>Update Subject Grades</h1><br><br>
+    <form action="UpdateSubject" method="post">
+        <table>
+            <tr>        
+            <td><label for="roll_no">Roll Number:</label></td>
+            <td><input type="text" id="roll_no" name="roll_no" required><br><br></td>
+            </tr>
+            <tr>
+       <td><label for="subject_code">Subject Code:</label></td>
+       <td><input type="text" id="subject_code" name="subject_code" required><br><br></td>
+        </tr>
+        <tr>
+        <td><label for="year">Year:</label></td>
+        <td><input type="number" id="year" name="year" required><br><br></td>
+        </tr>
+        <tr>
+        <td><label for="sem">Semester:</label></td>
+       <td><input type="number" id="sem" name="sem" required><br><br></td>
+       </tr>
+       <tr>
+      <td><label for="grade">New Grade:</label></td>
+      <td><input type="text" id="grade" name="grade" required><br><br></td>
+        </tr>
+</table>
+        <button class="button2" type="submit" class="btn">Update Grade</button>
+    </form>
+    </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div>
+                   <div class="footer-col-2">
+                   <img src="university-logo.avif" alt="my company name" style="max-width:80px;
+                   height:auto;
+                   border-radius:100%;" id="first"><h1><strong>SHMN University</strong></h1>
+                   </div>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University ManagementS System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><div class="logo-container">
+        <img src="university-logo.avif" height="100px" width="100px"><br><br>
+        <h1><strong> SHMN University</strong></h1>
+    </div><br><br>
+        <nav>
+            <a href="./Register.html">Register</a>
+            <a href="./StudentDetails.html">Student Details</a> 
+            <a href="./AddSubjectGrades.html">Academic</a> 
+            <a href="./stdfee.html">Fee Sturcture</a>
+            <a href="./update.html">Update Details</a>  
+            <a href="DisplayForm">View Application</a> 
+            <a href="./RetrieveSubjectDetails.html">Grades</a>
+            <a href="./UpdateSubjectGrade.html">update grade</a>
+            <a href="./index.html">Log out</a> 
+        </nav>
+    </header>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <h1 class="admin-name">SHMN</h1>
+                <p class="admin-designation">University Admin</p>
+            </div>
+            <div class="profile-body">
+                <h2>Management Rules</h2>
+                <ul class="rules-list">
+                    <li>Ensure the smooth operation of university systems</li>
+                    <li>Oversee the administration and management of university resources</li>
+                    <li>Maintain and update academic records</li>
+                    <li>Implement university policies and procedures</li>
+                    <li>Coordinate with faculty and staff for efficient functioning</li>
+                </ul>
+                <h2>Contact Information</h2>
+                <p>Email: admin@university.edu</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <div class="footer">
+                <div>
+                       <div class="footer-col-2">
+                       <img src="university-logo.avif" alt="my company name" style="max-width:80px;
+                       height:auto;
+                       border-radius:100%;" id="first"><h1><strong>SHMN University</strong></h1>
+                       </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!---------js for toggle menu-->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px"){
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+
+</script>
+</body>
+</html>
